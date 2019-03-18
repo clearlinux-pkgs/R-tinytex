@@ -4,12 +4,14 @@
 #
 Name     : R-tinytex
 Version  : 0.11
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.11.tar.gz
 Summary  : Helper Functions to Install and Maintain 'TeX Live', and Compile
 Group    : Development/Tools
 License  : MIT
+Requires: R-xfun
+BuildRequires : R-xfun
 BuildRequires : buildreq-R
 
 %description
@@ -27,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552926569
+export SOURCE_DATE_EPOCH=1552942577
 
 %install
-export SOURCE_DATE_EPOCH=1552926569
+export SOURCE_DATE_EPOCH=1552942577
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
