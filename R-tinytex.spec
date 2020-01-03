@@ -4,7 +4,7 @@
 #
 Name     : R-tinytex
 Version  : 0.18
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.18.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.18.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents
