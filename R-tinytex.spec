@@ -4,7 +4,7 @@
 #
 Name     : R-tinytex
 Version  : 0.23
-Release  : 35
+Release  : 36
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.23.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.23.tar.gz
 Summary  : Helper Functions to Install and Maintain 'TeX Live', and Compile
@@ -30,10 +30,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589912166
+export SOURCE_DATE_EPOCH=1589912732
 
 %install
-export SOURCE_DATE_EPOCH=1589912166
+export SOURCE_DATE_EPOCH=1589912732
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
