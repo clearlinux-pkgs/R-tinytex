@@ -4,7 +4,7 @@
 #
 Name     : R-tinytex
 Version  : 0.40
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.40.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.40.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile
