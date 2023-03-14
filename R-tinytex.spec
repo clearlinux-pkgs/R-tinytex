@@ -4,7 +4,7 @@
 #
 Name     : R-tinytex
 Version  : 0.44
-Release  : 75
+Release  : 76
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.44.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.44.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile
@@ -13,9 +13,6 @@ License  : MIT
 Requires: R-xfun
 BuildRequires : R-xfun
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 # TinyTeX
@@ -34,10 +31,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675387326
+export SOURCE_DATE_EPOCH=1678828095
 
 %install
-export SOURCE_DATE_EPOCH=1675387326
+export SOURCE_DATE_EPOCH=1678828095
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
