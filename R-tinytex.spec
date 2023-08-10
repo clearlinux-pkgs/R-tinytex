@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-tinytex
-Version  : 0.45
-Release  : 80
-URL      : https://cran.r-project.org/src/contrib/tinytex_0.45.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/tinytex_0.45.tar.gz
+Version  : 0.46
+Release  : 81
+URL      : https://cran.r-project.org/src/contrib/tinytex_0.46.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/tinytex_0.46.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile
 Group    : Development/Tools
 License  : MIT
@@ -25,16 +25,19 @@ BuildRequires : buildreq-R
 
 %prep
 %setup -q -n tinytex
+pushd ..
+cp -a tinytex buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681922927
+export SOURCE_DATE_EPOCH=1691686701
 
 %install
-export SOURCE_DATE_EPOCH=1681922927
+export SOURCE_DATE_EPOCH=1691686701
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -72,6 +75,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc . || :
 
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
