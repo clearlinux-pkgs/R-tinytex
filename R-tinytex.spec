@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-tinytex
-Version  : 0.47
-Release  : 82
-URL      : https://cran.r-project.org/src/contrib/tinytex_0.47.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/tinytex_0.47.tar.gz
+Version  : 0.48
+Release  : 83
+URL      : https://cran.r-project.org/src/contrib/tinytex_0.48.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/tinytex_0.48.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile
 Group    : Development/Tools
 License  : MIT
@@ -34,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696266122
+export SOURCE_DATE_EPOCH=1697220431
 
 %install
-export SOURCE_DATE_EPOCH=1696266122
+export SOURCE_DATE_EPOCH=1697220431
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
