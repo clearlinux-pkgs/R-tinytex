@@ -7,7 +7,7 @@
 #
 Name     : R-tinytex
 Version  : 0.53
-Release  : 90
+Release  : 91
 URL      : https://cran.r-project.org/src/contrib/tinytex_0.53.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/tinytex_0.53.tar.gz
 Summary  : Helper Functions to Install and Maintain TeX Live, and Compile
